@@ -18,6 +18,7 @@ During the setup, I configured the virtual network, assigned a static IP address
 * 7-Zip
 
 ## 1. Setting Up VirtualBox and Kali Linux
+![Kali Linux Desktop](screenshots/02-kali-desktop.png)
 
 I started by installing Oracle VirtualBox on my Windows computer.
 
@@ -26,6 +27,9 @@ After that, I downloaded the pre-built Kali Linux virtual machine from the offic
 I initially experienced some problems while booting Kali Linux, including a black screen and graphics-related error messages. After troubleshooting the virtual machine settings, I was able to start Kali successfully.
 
 ## 2. Network Configuration
+![NAT Network Configuration](screenshots/01-nat-network.png)
+
+![VirtualBox Network Adapter](screenshots/03-network-adapter.png)
 
 The next step was creating a NAT Network in VirtualBox.
 
@@ -48,6 +52,8 @@ The machine initially received the IP address `10.0.0.3` through DHCP, but the p
 I configured a static IP address using NetworkManager.
 
 ## 3. Testing Network Connectivity
+
+![Network Connectivity Test](screenshots/04-network-connectivity.png)
 
 After configuring the network, I verified the IP address using:
 
@@ -72,6 +78,9 @@ returned `HTTP/2 200`.
 This confirmed that HTTPS connectivity and DNS resolution were working.
 
 ## 4. Clipboard and File Sharing
+![Shared Folder Configuration](screenshots/05-shared-folders.png)
+
+![File Transfer Test](screenshots/07-shared-file-transfer.png)
 
 I enabled the following settings in VirtualBox:
 
@@ -92,6 +101,7 @@ The shared directory was accessible inside Kali at:
 I successfully transferred a test file and confirmed that it appeared in Windows Downloads.
 
 ## 5. Creating a Snapshot
+![VirtualBox Snapshot](screenshots/06-snapshot.png)
 
 After completing the configuration, I shut down Kali Linux and created a VirtualBox snapshot.
 
